@@ -4,19 +4,21 @@
 //
 // *************************************
 
-@each $bpname in $breakpoint-classes {
-  @each $val, $class in $bp-values {
-    @include breakpoint($bpname $val) {
-      .u-fl\@#{$bpname}#{$class} {
-        float: left !important;
-      }
+@if $enable-float-utils {
+  @each $bpname in $breakpoint-classes {
+    @each $val, $class in $bp-values {
+      @include breakpoint($bpname $val) {
+        .u-fl\@#{$bpname}#{$class} {
+          float: left !important;
+        }
 
-      .u-fr\@#{$bpname}#{$class} {
-        float: right !important;
-      }
+        .u-fr\@#{$bpname}#{$class} {
+          float: right !important;
+        }
 
-      .u-fn\@#{$bpname}#{$class} {
-        float: none !important;
+        .u-fn\@#{$bpname}#{$class} {
+          float: none !important;
+        }
       }
     }
   }

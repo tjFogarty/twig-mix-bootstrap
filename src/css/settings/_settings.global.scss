@@ -1,0 +1,22 @@
+// *************************************
+//
+// Global Settings
+//  - Some of these options may cause bloat
+//
+// *************************************
+
+// adds responsive classes for margins and paddings
+$enable-spacing-utils: false;
+
+// adds responsive classes for floats
+$enable-float-utils: false;
+
+// adds responsive classes for text
+$enable-text-utils: false;
+
+// used for generating responsive classes
+$bp-values: (
+  '': '-up',
+  'only': '-only',
+  'down': '-down'
+);
