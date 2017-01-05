@@ -8,8 +8,8 @@
   margin: 0;
   padding: 0;
   list-style: none;
+}
 
-  > li {
-    display: inline-block;
-  }
+.o-list-inline__item {
+  display: inline-block;
 }

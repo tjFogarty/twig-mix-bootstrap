@@ -13,7 +13,6 @@ let mix = require('laravel-mix').mix;
 
 mix.js('src/js/main.js', 'public/js/')
    .sass('src/css/main.scss', 'public/css/')
-   .extract(['jquery', 'foundation-sites'])
    .sourceMaps();
 
 // Full API
