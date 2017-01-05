@@ -1,0 +1,7 @@
+node_modules
+.DS_Store
+npm-debug.log
+*.sublime-project
+*.sublime-workspace
+.remote-sync.json
+sftp-config.json

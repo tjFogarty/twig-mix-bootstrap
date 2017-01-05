@@ -1,0 +1,16 @@
+{
+  "extends": "standard",
+  "env": {
+    "browser": true
+  },
+  "rules": {
+    "semi": ["error", "always"],
+    "compat/compat": 2
+  },
+  "plugins": ["compat"],
+  "globals": {
+    "$": true,
+    "console": true,
+    "Foundation": true
+  }
+}
