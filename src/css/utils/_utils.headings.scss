@@ -1,0 +1,23 @@
+// *************************************
+//
+// Heading utilities
+//
+// *************************************
+
+@each $bpname in $breakpoint-classes {
+  @each $val, $class in $bp-values {
+    @include breakpoint($bpname $val) {
+      .u-h1\@#{$bpname}#{$class} {
+          @include typi($h1-map);
+      }
+
+      .u-h2\@#{$bpname}#{$class} {
+          @include typi($h2-map);
+      }
+
+      .u-h3\@#{$bpname}#{$class} {
+          @include typi($h3-map);
+      }
+    }
+  }
+}

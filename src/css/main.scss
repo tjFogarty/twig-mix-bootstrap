@@ -1,0 +1,117 @@
+// *************************************
+//
+//   Style manifest file
+//   -> Author: Emagine Media
+//
+//   The general idea is to increase in specificity
+//   as we go further down the list.
+//
+//   1. Settings
+//      -> Variables, like font sizes, colours...
+//
+//   2. Tools
+//      -> Mixins and functions, no styles yet
+//
+//   3. Generic - nothing too specific
+//      -> Base level resets, box sizing
+//
+//   4. Elements
+//      -> Target individual elements, no classes just type selectors
+//
+//   5. Objects
+//      -> Design patterns, not style-specific
+//         Examples would be grids, or layout patterns
+//
+//   6. Components
+//      -> Ok, you can start styling the UI now
+//
+//   7. Themes
+//      -> Completely optional - theme your components
+//
+//   8. Utilities
+//      -> Overrides and helpers
+//         e.g. text-aligns, widths, floats, display...
+//
+//   9. Vendor
+//     -> Third-party libraries
+//
+//  10. Shame
+//    -> Quick fixes/hacks. Keep them all in once place
+//       so you can keep track, and come back to them later
+//
+// *************************************
+
+// -------------------------------------
+//   1. Settings
+// -------------------------------------
+
+@import "settings/settings.type";
+@import "settings/settings.colours";
+// ----- Check out this file to set some base rules ----- //
+@import "settings/settings.foundation";
+
+// -------------------------------------
+//   2. Tools - Mixins, functions...
+// -------------------------------------
+
+@import "tools/tools.clearfix";
+@import "tools/tools.functions";
+@import "tools/tools.mixins";
+// Though this is a vendor dependency, we need this loaded first in order to use it
+@import "../../node_modules/foundation-sites/scss/foundation";
+@import "vendor/vendor.foundation-imports";
+
+// -------------------------------------
+//   3. Generic
+// -------------------------------------
+
+@import "generic/generic.box-sizing";
+@import "generic/generic.reset";
+
+// -------------------------------------
+//   4. Elements - Base styles, no classes
+// -------------------------------------
+
+@import "elements/elements.paragraphs";
+@import "elements/elements.headings";
+@import "elements/elements.images";
+@import "elements/elements.inputs";
+@import "elements/elements.forms";
+@import "elements/elements.page";
+@import "elements/elements.links";
+
+// -------------------------------------
+//   5. Objects - Design patterns
+// -------------------------------------
+
+@import "objects/objects.list-inline";
+@import "objects/objects.list-bare";
+@import "objects/objects.layout";
+@import "objects/objects.pack";
+
+// -------------------------------------
+//   6. Components - UI Styles
+// -------------------------------------
+
+// -------------------------------------
+//   7. Themes
+// -------------------------------------
+
+// -------------------------------------
+//   8. Utilities
+// -------------------------------------
+
+@import "utils/utils.spacing";
+@import "utils/utils.floats";
+@import "utils/utils.print";
+@import "utils/utils.text";
+
+// -------------------------------------
+//   9. Vendor
+// -------------------------------------
+
+// -------------------------------------
+//  10.  SHAAAAMMMEEE
+// ------------------------------------
+
+@import "shame";

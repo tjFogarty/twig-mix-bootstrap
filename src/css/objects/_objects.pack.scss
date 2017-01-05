@@ -1,0 +1,30 @@
+// *************************************
+//
+// Pack object
+//
+// *************************************
+
+/**
+ * 1. Fill all available space.
+ * 2. Cause children to be automatically equally sized.
+ */
+
+.o-pack {
+  width: 100%; /* [1] */
+  display: table;
+  table-layout: fixed; /* [2] */
+}
+
+.o-pack__item {
+  display: table-cell;
+}
+
+.o-pack__item--middle {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.o-pack__item--bottom {
+  display: table-cell;
+  vertical-align: bottom;
+}
