@@ -47,8 +47,6 @@
 
 @import "settings/settings.global";
 @import "settings/settings.colours";
-// ----- Check out this file to set some base rules ----- //
-@import "settings/settings.foundation";
 
 // -------------------------------------
 //   2. Tools - Mixins, functions...
@@ -57,9 +55,6 @@
 @import "tools/tools.clearfix";
 @import "tools/tools.functions";
 @import "tools/tools.mixins";
-// Though this is a vendor dependency, we need this loaded first in order to use it
-@import "../../node_modules/foundation-sites/scss/foundation";
-@import "vendor/vendor.foundation-imports";
 
 // -------------------------------------
 //   3. Generic
@@ -102,14 +97,13 @@
 //   8. Utilities
 // -------------------------------------
 
-@import "utils/utils.spacing";
-@import "utils/utils.floats";
 @import "utils/utils.print";
-@import "utils/utils.text";
 
 // -------------------------------------
 //   9. Vendor
 // -------------------------------------
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
 
 // -------------------------------------
 //  10.  SHAAAAMMMEEE

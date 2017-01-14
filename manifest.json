@@ -1,0 +1,6 @@
+{
+  "main.css": "public/css/main.css",
+  "main.js": "public/js/main.js",
+  "manifest.js": "public/js/manifest.js",
+  "vendor.js": "public/js/vendor.js"
+}

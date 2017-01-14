@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Boilerplate (Ultra Edition)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {% block head %}
+    <link rel="stylesheet" href="{{ assets('/css/main.css') }}">
+    {% endblock %}
+  </head>
+  <body>
+
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#">Navbar</a>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/about">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    {% block content %}{% endblock %}
+
+    {% block footer %}
+    <script src="{{ assets('/js/manifest.js') }}" defer></script>
+    <script src="{{ assets('/js/vendor.js') }}" defer></script>
+    <script src="{{ assets('/js/main.js') }}" defer></script>
+    {% endblock %}
+  </body>
+</html>

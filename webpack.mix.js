@@ -13,6 +13,7 @@ let mix = require('laravel-mix').mix;
 
 mix.js('src/js/main.js', 'public/js/')
    .sass('src/css/main.scss', 'public/css/')
+   .extract(['jquery', 'tether', 'bootstrap'])
    .sourceMaps();
 
 // Full API

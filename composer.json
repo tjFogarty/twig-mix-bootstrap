@@ -1,0 +1,7 @@
+{
+    "require": {
+        "twig/twig": "~2.0",
+        "phroute/phroute": "^2.1",
+        "symfony/var-dumper": "^3.2"
+    }
+}
