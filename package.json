@@ -1,8 +1,7 @@
 {
-  "name": "boilerplate-ultra",
+  "name": "twig-mix-bootstrap",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Shiny toys",
   "scripts": {
     "eslint:fix": "node_modules/eslint/bin/eslint.js src/js/**/*.js --fix",
     "webpack": "node_modules/cross-env/bin/cross-env.js NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules",

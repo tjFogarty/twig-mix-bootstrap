@@ -4,5 +4,4 @@ vendor/
 npm-debug.log
 *.sublime-project
 *.sublime-workspace
-.remote-sync.json
-sftp-config.json
+hot
